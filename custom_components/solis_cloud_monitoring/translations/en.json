@@ -48,6 +48,15 @@
       "pv1_power": {
         "name": "PV String 1 Power"
       },
+      "pv2_voltage": {
+        "name": "PV String 2 Voltage"
+      },
+      "pv2_current": {
+        "name": "PV String 2 Current"
+      },
+      "pv2_power": {
+        "name": "PV String 2 Power"
+      },
       "grid_voltage": {
         "name": "Grid Voltage"
       },

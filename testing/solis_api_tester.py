@@ -278,6 +278,27 @@ async def test_monitoring_endpoints(api: SolisCloudAPI, inverter_sn: Optional[st
                 "description": "PV String 1 Power",
                 "ha_device_class": "power",
                 "ha_state_class": "measurement"
+            },
+            "pv2_voltage": {
+                "value": inverter_details.get("uPv2"),
+                "unit": "V",
+                "description": "PV String 2 Voltage",
+                "ha_device_class": "voltage",
+                "ha_state_class": "measurement"
+            },
+            "pv2_current": {
+                "value": inverter_details.get("iPv2"),
+                "unit": "A",
+                "description": "PV String 2 Current",
+                "ha_device_class": "current",
+                "ha_state_class": "measurement"
+            },
+            "pv2_power": {
+                "value": inverter_details.get("pow2"),
+                "unit": "W",
+                "description": "PV String 2 Power",
+                "ha_device_class": "power",
+                "ha_state_class": "measurement"
             }
         },
         "grid_monitoring": {
